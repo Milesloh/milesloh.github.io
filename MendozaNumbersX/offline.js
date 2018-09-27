@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1538067495,
+	"version": 1537896820,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -42,10 +42,6 @@
 		"images/buildertenthmaker-sheet0.png",
 		"images/builderhundredthmaker-sheet0.png",
 		"images/builderthousandthmaker-sheet0.png",
-		"images/builderoutline2-sheet0.png",
-		"images/builderthousandth2-sheet0.png",
-		"images/builderx-sheet0.png",
-		"images/builderxmaker-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
