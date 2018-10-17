@@ -12,3 +12,14 @@ when did she stop?,tf
 at what time did she arrive?,tf
 at what time did she get there?,tf
 when did she start walking at that velocity?,ti
+find the distance she went,?d
+find where she started,di
+find where she ended,df
+find when she started,ti
+find when she ended,tf
+find the change in position,?d
+find the final position,df
+find the initial position,di
+find the initial time,ti
+find the final time,tf
+find how long it took,?t
