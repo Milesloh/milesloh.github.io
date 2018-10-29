@@ -160,6 +160,7 @@ a.imageSmoothingEnabled=c:(a.webkitImageSmoothingEnabled=c,a.mozImageSmoothingEn
 function(){window.c2runtime.setSize(window.innerWidth,window.innerHeight)});window.c2runtime.setSize(window.innerWidth,window.innerHeight);return a};window.createEjectaRuntime=function(){var a=new d(document.getElementById("canvas"));window.c2runtime=a;window.c2runtime.setSize(window.innerWidth,window.innerHeight);return a}})();window.cr_getC2Runtime=function(){var d=document.getElementById("c2canvas");return d?d.c2runtime:window.c2runtime?window.c2runtime:null};
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 window.cr_getSnapshot=function(d,p){var l=window.cr_getC2Runtime();l&&l.Bp(d,p)};window.cr_sizeCanvas=function(d,p){if(0!==d&&0!==p){var l=window.cr_getC2Runtime();l&&l.setSize(d,p)}};window.cr_setSuspended=function(d){var p=window.cr_getC2Runtime();p&&p.setSuspended(d)};
 (function(){function d(a,c){this.b=a;this.Yd=null;this.scrollX=this.b.ia/2;this.scrollY=this.b.ga/2;this.scale=1;this.i=0;this.Ge=!0;this.name=c[0];this.as=c[1];this.$r=c[2];this.width=c[1];this.height=c[2];this.Mn=c[3];this.vn=c[4];this.J=c[5];var b=c[6],e,f;this.B=[];this.Hf=[];e=0;for(f=b.length;e<f;e++){var d=new Lb(this,b[e]);d.Pm=e;this.B.push(d)}b=c[7];this.zd=[];e=0;for(f=b.length;e<f;e++){var d=b[e],k=this.b.k[d[1]];k.Nb||(k.Nb=d);this.zd.push(d);-1===this.Hf.indexOf(k)&&this.Hf.push(k)}this.A=
 [];this.O=[];this.cd=!0;this.ma=[];e=0;for(f=c[8].length;e<f;e++)this.A.push({id:c[8][e][0],name:c[8][e][1],xa:-1,nc:!1,sb:!0,index:e}),this.ma.push(c[8][e][2].slice(0));this.rc();this.Ye=new P(0,0,1,1);this.Zj=new P(0,0,1,1);this.Id={}}function p(a,c){return a.tc-c.tc}function l(a,c){this.Ha=a;this.b=a.b;this.d=[];this.scale=1;this.i=0;this.Pc=!1;this.gd=new P(0,0,0,0);this.Hn=new ra;this.X=this.V=this.Y=this.U=0;this.re=!1;this.kd=-1;this.Ei=0;this.name=c[0];this.index=c[1];this.J=c[2];this.visible=
@@ -348,6 +349,8 @@ function bc(){return[cc,dc,X,Z,fc,ec,X.prototype.g.no,W.prototype.g.jo,W.prototy
 X.prototype.K.ho,W.prototype.g.Hk,Z.prototype.g.Mk,Z.prototype.g.Gk,dc.prototype.g.co,W.prototype.g.Fk,cc.prototype.K.CallFunction,X.prototype.F.Xo,W.prototype.F.qs,W.prototype.F.rs,W.prototype.K.Ko,W.prototype.K.Yo,ec.prototype.K.Pk,W.prototype.K.Oo,W.prototype.F.Kr,W.prototype.g.io,X.prototype.g.lo,X.prototype.K.Jo,cc.prototype.K.Qo,W.prototype.F.round,Z.prototype.g.li,Z.prototype.g.ro,Z.prototype.F.Wo,Z.prototype.g.ki,X.prototype.g.Ek,Z.prototype.g.po,X.prototype.F.Vn,Z.prototype.F.cp,Z.prototype.F.dp,
 X.prototype.K.mi,W.prototype.F.tp,cc.prototype.F.Dk,W.prototype.K.fo,X.prototype.F.to,dc.prototype.K.Rk,X.prototype.K.Qk,X.prototype.F.ko,dc.prototype.K.Qk,dc.prototype.K.No,dc.prototype.K.mi,X.prototype.K.Ok,dc.prototype.K.Ok,dc.prototype.g.Ek]};
 =======
+=======
+>>>>>>> parent of 9ec3e6e... Fixed planet stuttering
 =======
 >>>>>>> parent of 9ec3e6e... Fixed planet stuttering
 window.cr_getSnapshot=function(d,n){var k=window.cr_getC2Runtime();k&&k.Cp(d,n)};window.cr_sizeCanvas=function(d,n){if(0!==d&&0!==n){var k=window.cr_getC2Runtime();k&&k.setSize(d,n)}};window.cr_setSuspended=function(d){var n=window.cr_getC2Runtime();n&&n.setSuspended(d)};
@@ -540,6 +543,9 @@ function bc(){return[cc,X,dc,Z,gc,fc,ec,X.prototype.g.oo,W.prototype.g.ko,W.prot
 X.prototype.J.io,W.prototype.g.Jk,Z.prototype.g.Ok,Z.prototype.g.Ik,dc.prototype.g.eo,W.prototype.g.Hk,cc.prototype.J.CallFunction,X.prototype.D.Yo,W.prototype.D.rs,W.prototype.D.ss,W.prototype.J.Lo,W.prototype.J.Zo,ec.prototype.J.Rk,W.prototype.J.Po,W.prototype.D.Lr,W.prototype.g.jo,X.prototype.g.mo,X.prototype.J.Ko,cc.prototype.J.Ro,W.prototype.D.round,Z.prototype.g.mi,Z.prototype.g.so,Z.prototype.D.Xo,Z.prototype.g.li,X.prototype.g.Gk,Z.prototype.g.qo,X.prototype.D.Wn,Z.prototype.D.dp,Z.prototype.D.ep,
 X.prototype.J.ni,W.prototype.D.up,cc.prototype.D.Fk,W.prototype.J.ho,X.prototype.D.uo,dc.prototype.J.Tk,X.prototype.J.Sk,X.prototype.D.lo,dc.prototype.J.Sk,dc.prototype.J.Oo,dc.prototype.J.ni,X.prototype.J.Qk,dc.prototype.J.Qk,dc.prototype.g.Gk]};
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 9ec3e6e... Fixed planet stuttering
+=======
 >>>>>>> parent of 9ec3e6e... Fixed planet stuttering
 =======
 >>>>>>> parent of 9ec3e6e... Fixed planet stuttering
