@@ -1,0 +1,28 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Mr. Loh",
+    "description": "",
+    "home_page_url": "https://milesloh.github.io",
+    "feed_url": "https://milesloh.github.io/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Mr. Miles Loh"
+    },
+    "items": [
+        {
+            "id": "https://milesloh.github.io/test-post.html",
+            "url": "https://milesloh.github.io/test-post.html",
+            "title": "Test Post",
+            "summary": "Link to thing",
+            "content_html": "<a href=\"milesloh.github.io/fum]o\" title=\"Link to thing\">Link to thing</a>",
+            "image": "https://milesloh.github.io/media/posts/1/",
+            "author": {
+                "name": "Mr. Miles Loh"
+            },
+            "tags": [
+            ],
+            "date_published": "2018-10-28T21:42:59-05:00",
+            "date_modified": "2018-10-28T21:42:59-05:00"
+        }
+    ]
+}
