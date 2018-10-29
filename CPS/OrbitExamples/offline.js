@@ -1,6 +1,10 @@
 ﻿{
 <<<<<<< HEAD
+<<<<<<< HEAD
 	"version": 1540826852,
+=======
+	"version": 1540648136,
+>>>>>>> parent of 9ec3e6e... Fixed planet stuttering
 =======
 	"version": 1540648136,
 >>>>>>> parent of 9ec3e6e... Fixed planet stuttering
