@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1547217121,
+	"version": 1547222997,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -10,6 +10,7 @@
 		"images/ruler-sheet1.png",
 		"images/numberenternumberback-sheet0.png",
 		"images/numberenternumberfieldback-sheet0.png",
+		"images/hiddenbutton-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
@@ -19,6 +20,7 @@
 		"weblysleekuil-webfont.eot",
 		"weblysleekuil-webfont.svg",
 		"weblysleekuil-webfont.ttf",
-		"weblysleekuil-webfont.woff"
+		"weblysleekuil-webfont.woff",
+		"stylesheet.css"
 	]
 }
