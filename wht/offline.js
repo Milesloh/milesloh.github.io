@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1549891731,
+	"version": 1549982658,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -14,6 +14,12 @@
 		"images/buttontarget-sheet0.png",
 		"images/spritebuttontemplate-sheet0.png",
 		"images/colorsquare-sheet0.png",
+		"images/circledot-sheet0.png",
+		"images/circleback-sheet0.png",
+		"images/circleback-sheet1.png",
+		"images/circleback-sheet2.png",
+		"images/circledot2-sheet0.png",
+		"images/circledot2-sheet1.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
