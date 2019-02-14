@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1550152948,
+	"version": 1550165138,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -16,14 +16,8 @@
 		"images/widearrowstem-sheet0.png",
 		"images/widearrowhead-sheet0.png",
 		"images/thinarrowhead-sheet0.png",
-		"images/leftobject-sheet0.png",
-		"images/leftobject-sheet1.png",
-		"images/dragginobject-sheet0.png",
 		"images/ground-sheet0.png",
-		"images/velocityhandle-sheet0.png",
-		"images/accelerationhandle-sheet0.png",
 		"images/tiletarget-sheet0.png",
-		"images/rightobject-sheet0.png",
 		"images/hiddenbutton1-sheet0.png",
 		"images/numberfieldback-sheet0.png",
 		"images/numberfieldback-sheet1.png",
