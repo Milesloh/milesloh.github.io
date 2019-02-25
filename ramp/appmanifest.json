@@ -1,6 +1,6 @@
 ﻿{
-	"name": "Ship Game",
-	"short_name": "Ship Game",
+	"name": "Ball and Ramp",
+	"short_name": "Ball and Ramp",
 	"start_url": "index.html",
 	"display": "fullscreen",
 	"orientation": "any",
