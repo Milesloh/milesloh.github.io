@@ -1,0 +1,31 @@
+﻿{
+	"version": 1557461408,
+	"fileList": [
+		"data.js",
+		"c2runtime.js",
+		"jquery-2.1.1.min.js",
+		"offlineClient.js",
+		"images/dragpoint-sheet0.png",
+		"images/edgefill-sheet0.png",
+		"images/edgefill-sheet1.png",
+		"images/beam-sheet0.png",
+		"images/laser-sheet0.png",
+		"images/edgenode-sheet0.png",
+		"images/edgewall-sheet0.png",
+		"images/selectarea-sheet0.png",
+		"images/target-sheet0.png",
+		"images/ruler-sheet0.png",
+		"images/rotate-sheet0.png",
+		"images/protractor-sheet0.png",
+		"images/diamondback-sheet0.png",
+		"images/squareback-sheet0.png",
+		"images/squareback-sheet1.png",
+		"images/protractor2-sheet0.png",
+		"icon-16.png",
+		"icon-32.png",
+		"icon-114.png",
+		"icon-128.png",
+		"icon-256.png",
+		"loading-logo.png"
+	]
+}
