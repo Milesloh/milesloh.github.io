@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1559222656,
+	"version": 1559233712,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -13,6 +13,7 @@
 		"images/kesmall-sheet0.png",
 		"images/kesmall-sheet1.png",
 		"images/selectionbox-sheet0.png",
+		"images/kesmallfill-sheet0.png",
 		"images/sliderarea-sheet0.png",
 		"images/circle-sheet0.png",
 		"images/hiddenbutton1-sheet0.png",
