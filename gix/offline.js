@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1560518583,
+	"version": 1560518885,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -13,6 +13,7 @@
 		"images/waveparticletemplate-sheet0.png",
 		"images/waveparticletemplate-sheet1.png",
 		"images/waveline-sheet0.png",
+		"images/wavebar-sheet0.png",
 		"images/graphback-sheet0.png",
 		"images/ink-sheet0.png",
 		"images/lohslider-sheet0.png",
