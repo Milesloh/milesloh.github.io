@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1566146975,
+	"version": 1566158444,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -27,6 +27,7 @@
 		"images/alignleft-sheet0.png",
 		"images/aligncenter-sheet0.png",
 		"images/alignright-sheet0.png",
+		"images/squarebutton-sheet0.png",
 		"media/chime.m4a",
 		"media/chime.ogg",
 		"icon-16.png",
