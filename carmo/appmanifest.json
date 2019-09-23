@@ -1,6 +1,6 @@
 ﻿{
-	"name": "GsandU",
-	"short_name": "GsandU",
+	"name": "Car Motion",
+	"short_name": "Car Motion",
 	"start_url": "index.html",
 	"display": "fullscreen",
 	"orientation": "any",
