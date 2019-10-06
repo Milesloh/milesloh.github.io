@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1570306739,
+	"version": 1570326065,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -14,6 +14,9 @@
 		"images/saleen-sheet0.png",
 		"images/menuback-sheet0.png",
 		"images/watergenarea-sheet0.png",
+		"images/sliderfill-sheet0.png",
+		"images/slider-sheet0.png",
+		"images/oil-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
