@@ -1,9 +1,9 @@
 ﻿{
-	"version": 1544730054,
+	"version": 1574776687,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
-		"jquery-2.1.1.min.js",
+		"jquery-3.4.1.min.js",
 		"offlineClient.js",
 		"images/ball-sheet0.png",
 		"images/truck-sheet0.png",
@@ -27,6 +27,7 @@
 		"images/ant-sheet1.png",
 		"images/line-sheet0.png",
 		"images/ruler-sheet0.png",
+		"images/hbutton1-sheet0.png",
 		"media/chime.m4a",
 		"media/chime.ogg",
 		"icon-16.png",
