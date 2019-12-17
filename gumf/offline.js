@@ -1,9 +1,9 @@
 ﻿{
-	"version": 1547661998,
+	"version": 1576591642,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
-		"jquery-2.1.1.min.js",
+		"jquery-3.4.1.min.js",
 		"offlineClient.js",
 		"images/physobjtemplate-sheet0.png",
 		"images/ink-sheet0.png",
