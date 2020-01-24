@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1579873705,
+	"version": 1579875818,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -23,6 +23,7 @@
 		"images/grunt-sheet0.png",
 		"images/grunt2-sheet0.png",
 		"images/steven-sheet0.png",
+		"images/hbutton3-sheet0.png",
 		"media/chime.m4a",
 		"media/chime.ogg",
 		"icon-16.png",
