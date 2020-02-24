@@ -1,9 +1,9 @@
 ﻿{
-	"version": 1553085437,
+	"version": 1582553658,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
-		"jquery-2.1.1.min.js",
+		"jquery-3.4.1.min.js",
 		"offlineClient.js",
 		"images/lohslider-sheet0.png",
 		"images/sliderfill-sheet0.png",
