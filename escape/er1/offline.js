@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1584482586,
+	"version": 1584541143,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -10,6 +10,7 @@
 		"images/bacll-sheet2.png",
 		"images/wall-sheet0.png",
 		"images/changeregion-sheet0.png",
+		"images/fullscreenbutton-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
