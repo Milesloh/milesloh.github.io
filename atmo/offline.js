@@ -1,9 +1,9 @@
 ﻿{
-	"version": 1559591602,
+	"version": 1590496033,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
-		"jquery-2.1.1.min.js",
+		"jquery-3.4.1.min.js",
 		"offlineClient.js",
 		"images/physobjtemplate-sheet0.png",
 		"images/numberenternumberfieldback-sheet0.png",
