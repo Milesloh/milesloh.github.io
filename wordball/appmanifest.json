@@ -3,8 +3,8 @@
 	"short_name": "WordBall",
 	"description": "",
 	"start_url": "index.html",
-	"display": "fullscreen",
-	"orientation": "landscape",
+	"display": "standalone",
+	"orientation": "portrait",
 	"background_color": "#ffffff",
 	"icons": [
 		{
