@@ -38,17 +38,7 @@ html, body, canvas {
 
 
 @font-face {
-	font-family: 'cascadiamono';
-	src: url('fonts/cascadiamono.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'cascadiamono-light';
-	src: url('fonts/cascadiamono-light.otf') format('opentype');
-}
-
-@font-face {
 	font-family: 'cascadiamono-extralight';
-	src: url('fonts/cascadiamono-extralight.otf') format('opentype');
+	src: url('fonts/cascadiamono-extralight.woff2') format('woff2');
 }
 
