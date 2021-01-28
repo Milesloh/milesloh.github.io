@@ -1,7 +1,7 @@
 {
 	"name": "WordBall",
 	"short_name": "WordBall",
-	"description": "",
+	"description": "A word game",
 	"start_url": "index.html",
 	"display": "fullscreen",
 	"orientation": "portrait",
