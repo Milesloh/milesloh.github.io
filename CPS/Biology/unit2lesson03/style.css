@@ -38,7 +38,7 @@ html, body, canvas {
 
 
 @font-face {
-	font-family: 'cascadiacode-light';
-	src: url('fonts/cascadiacode-light.otf') format('opentype');
+	font-family: 'cascadiamono-extralight';
+	src: url('fonts/cascadiamono-extralight.woff2') format('woff2');
 }
 
