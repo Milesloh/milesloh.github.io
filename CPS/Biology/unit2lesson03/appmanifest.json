@@ -1,10 +1,10 @@
 {
-	"name": "WordBall",
-	"short_name": "WordBall",
-	"description": "A word game",
+	"name": "DNA to Proteins Practice",
+	"short_name": "DNA to Proteins Practice",
+	"description": "",
 	"start_url": "index.html",
 	"display": "fullscreen",
-	"orientation": "portrait",
+	"orientation": "any",
 	"background_color": "#ffffff",
 	"icons": [
 		{
