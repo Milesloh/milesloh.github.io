@@ -3552,9 +3552,12 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Keyboard.Cnds.OnKeyReleased,
 		C3.Plugins.Sprite.Acts.SetBoolInstanceVar,
 		C3.Plugins.System.Cnds.EveryTick,
+		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.Touch.Exps.AccelerationX,
+		C3.Plugins.System.Exps.dt,
 		C3.Plugins.Touch.Exps.AccelerationY,
 		C3.Plugins.Touch.Exps.AccelerationZ,
+		C3.Plugins.System.Cnds.Every,
 		C3.Plugins.Touch.Cnds.OnTapGestureObject,
 		C3.Plugins.Touch.Cnds.OnDoubleTapGestureObject,
 		C3.Plugins.System.Cnds.For,
@@ -3563,7 +3566,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Exps.tokenat,
 		C3.Plugins.System.Exps.loopindex,
 		C3.Plugins.Text.Exps.Text,
-		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.Text.Cnds.OnCreated,
 		C3.Plugins.System.Cnds.ForEach,
 		C3.Plugins.Text.Acts.SetInstanceVar,
@@ -3622,6 +3624,12 @@ self.C3_JsPropNameTable = [
 	{SliderFill: 0},
 	{Button: 0},
 	{ToggleButton: 0},
+	{Ax: 0},
+	{Ay: 0},
+	{Az: 0},
+	{Vx: 0},
+	{Vy: 0},
+	{Vz: 0},
 	{tempIndex: 0}
 ];
 }
@@ -3740,10 +3748,26 @@ self.C3_ExpressionFuncs = [
 			return () => f0();
 		},
 		p => {
-			const f0 = p._GetNode(0).GetBoundMethod();
+			const v0 = p._GetNode(0).GetVar();
 			const f1 = p._GetNode(1).GetBoundMethod();
 			const f2 = p._GetNode(2).GetBoundMethod();
-			return () => and(((and(((and("X: ", f0()) + "\n") + "Y: "), f1()) + "\n") + "z: "), f2());
+			return () => (v0.GetValue() + (f1() * f2()));
+		},
+		() => 0.5,
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			const v1 = p._GetNode(1).GetVar();
+			const v2 = p._GetNode(2).GetVar();
+			return () => and(((and(((and("Ax: ", (v0.GetValue() / 0.5)) + "\n") + "Ay: "), (v1.GetValue() / 0.5)) + "\n") + "Az: "), (v2.GetValue() / 0.5));
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			const v1 = p._GetNode(1).GetVar();
+			const v2 = p._GetNode(2).GetVar();
+			const v3 = p._GetNode(3).GetVar();
+			const v4 = p._GetNode(4).GetVar();
+			const v5 = p._GetNode(5).GetVar();
+			return () => and(((and(((and(((and(((and(((and("Ax: ", (v0.GetValue() / 0.5)) + "\n") + "Ay: "), (v1.GetValue() / 0.5)) + "\n") + "Az: "), (v2.GetValue() / 0.5)) + "\n") + "Vx: "), v3.GetValue()) + "\n") + "Vy: "), v4.GetValue()) + "\n") + "Vz: "), v5.GetValue());
 		},
 		() => "ToggleButton",
 		() => "",
