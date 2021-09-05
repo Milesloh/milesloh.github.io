@@ -3553,18 +3553,22 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetBoolInstanceVar,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.System.Acts.SetVar,
-		C3.Plugins.Touch.Exps.AccelerationX,
-		C3.Plugins.System.Exps.dt,
 		C3.Plugins.Touch.Exps.AccelerationY,
-		C3.Plugins.Touch.Exps.AccelerationZ,
-		C3.Plugins.System.Cnds.Every,
-		C3.Plugins.Touch.Cnds.OnTapGestureObject,
-		C3.Plugins.Touch.Cnds.OnDoubleTapGestureObject,
-		C3.Plugins.System.Cnds.For,
-		C3.Plugins.System.Exps.tokencount,
+		C3.Plugins.System.Exps.dt,
 		C3.Plugins.System.Cnds.Compare,
+		C3.Plugins.System.Exps.tokencount,
+		C3.Plugins.System.Exps.zeropad,
+		C3.Plugins.System.Cnds.For,
+		C3.Plugins.System.Exps.trim,
 		C3.Plugins.System.Exps.tokenat,
 		C3.Plugins.System.Exps.loopindex,
+		C3.Plugins.System.Acts.SetFunctionReturnValue,
+		C3.Plugins.System.Acts.StopLoop,
+		C3.Plugins.System.Exps.random,
+		C3.Plugins.System.Exps.uppercase,
+		C3.Plugins.Touch.Cnds.OnTapGesture,
+		C3.Plugins.Touch.Cnds.OnTapGestureObject,
+		C3.Plugins.Touch.Cnds.OnDoubleTapGestureObject,
 		C3.Plugins.Text.Exps.Text,
 		C3.Plugins.Text.Cnds.OnCreated,
 		C3.Plugins.System.Cnds.ForEach,
@@ -3586,7 +3590,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Exps.Width,
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
 		C3.Plugins.Sprite.Acts.SetWidth,
-		C3.Plugins.System.Exps.zeropad,
 		C3.Plugins.Touch.Cnds.OnTouchStart,
 		C3.Plugins.Touch.Exps.TouchID,
 		C3.Plugins.Sprite.Exps.BBoxLeft,
@@ -3624,12 +3627,21 @@ self.C3_JsPropNameTable = [
 	{SliderFill: 0},
 	{Button: 0},
 	{ToggleButton: 0},
-	{Ax: 0},
 	{Ay: 0},
-	{Az: 0},
-	{Vx: 0},
 	{Vy: 0},
-	{Vz: 0},
+	{Dy: 0},
+	{Ays: 0},
+	{NSmooth: 0},
+	{index: 0},
+	{FindString: 0},
+	{DataString: 0},
+	{TokenString: 0},
+	{NewElementString: 0},
+	{NewDataString: 0},
+	{N: 0},
+	{outString: 0},
+	{ReplaceString: 0},
+	{listLen0: 0},
 	{tempIndex: 0}
 ];
 }
@@ -3749,28 +3761,139 @@ self.C3_ExpressionFuncs = [
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			const f1 = p._GetNode(1).GetBoundMethod();
+			const v1 = p._GetNode(1).GetVar();
 			const f2 = p._GetNode(2).GetBoundMethod();
-			return () => (v0.GetValue() + (f1() * f2()));
+			return () => (v0.GetValue() + (v1.GetValue() * f2()));
 		},
-		() => 0.5,
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			const v1 = p._GetNode(1).GetVar();
+			const v2 = p._GetNode(2).GetVar();
+			return () => f0((v1.GetValue()).toString(), v2.GetValue(), ";");
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			const v1 = p._GetNode(1).GetVar();
+			return () => f0(v1.GetValue(), ";");
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => v0.GetValue();
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			const v1 = p._GetNode(1).GetVar();
+			return () => f0(0, v1.GetValue(), ";");
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			const f1 = p._GetNode(1).GetBoundMethod();
+			const v2 = p._GetNode(2).GetVar();
+			const f3 = p._GetNode(3).GetBoundMethod();
+			const v4 = p._GetNode(4).GetVar();
+			return () => ((((v0.GetValue() + "\n") + f1(Math.round((v2.GetValue() * 1000)), 4)) + "\n") + f3(Math.round((v4.GetValue() * 1000)), 4));
+		},
+		() => "StringListLibrary",
+		() => "",
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			const v1 = p._GetNode(1).GetVar();
+			const v2 = p._GetNode(2).GetVar();
+			return () => (f0(v1.GetValue(), v2.GetValue()) - 1);
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			const f1 = p._GetNode(1).GetBoundMethod();
+			const v2 = p._GetNode(2).GetVar();
+			const f3 = p._GetNode(3).GetBoundMethod();
+			const v4 = p._GetNode(4).GetVar();
+			return () => f0(f1(v2.GetValue(), f3(), v4.GetValue()));
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			const v1 = p._GetNode(1).GetVar();
+			return () => f0(v1.GetValue());
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			const v1 = p._GetNode(1).GetVar();
+			const v2 = p._GetNode(2).GetVar();
+			return () => f0(v1.GetValue(), v2.GetValue());
+		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			const v1 = p._GetNode(1).GetVar();
 			const v2 = p._GetNode(2).GetVar();
-			return () => and(((and(((and("Ax: ", (v0.GetValue() / 0.5)) + "\n") + "Ay: "), (v1.GetValue() / 0.5)) + "\n") + "Az: "), (v2.GetValue() / 0.5));
+			return () => ((v0.GetValue() + v1.GetValue()) + v2.GetValue());
 		},
 		p => {
-			const v0 = p._GetNode(0).GetVar();
+			const f0 = p._GetNode(0).GetBoundMethod();
+			const f1 = p._GetNode(1).GetBoundMethod();
+			const v2 = p._GetNode(2).GetVar();
+			const v3 = p._GetNode(3).GetVar();
+			return () => Math.floor(f0(f1(v2.GetValue(), v3.GetValue())));
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
 			const v1 = p._GetNode(1).GetVar();
+			const v2 = p._GetNode(2).GetVar();
+			const v3 = p._GetNode(3).GetVar();
+			return () => f0(v1.GetValue(), v2.GetValue(), v3.GetValue());
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			const f1 = p._GetNode(1).GetBoundMethod();
 			const v2 = p._GetNode(2).GetVar();
 			const v3 = p._GetNode(3).GetVar();
 			const v4 = p._GetNode(4).GetVar();
 			const v5 = p._GetNode(5).GetVar();
-			return () => and(((and(((and(((and(((and(((and("Ax: ", (v0.GetValue() / 0.5)) + "\n") + "Ay: "), (v1.GetValue() / 0.5)) + "\n") + "Az: "), (v2.GetValue() / 0.5)) + "\n") + "Vx: "), v3.GetValue()) + "\n") + "Vy: "), v4.GetValue()) + "\n") + "Vz: "), v5.GetValue());
+			const v6 = p._GetNode(6).GetVar();
+			return () => f0(f1(v2.GetValue(), v3.GetValue(), v4.GetValue()), v5.GetValue(), v6.GetValue());
 		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			const f1 = p._GetNode(1).GetBoundMethod();
+			const v2 = p._GetNode(2).GetVar();
+			const f3 = p._GetNode(3).GetBoundMethod();
+			const v4 = p._GetNode(4).GetVar();
+			const v5 = p._GetNode(5).GetVar();
+			const v6 = p._GetNode(6).GetVar();
+			return () => f0(f1(v2.GetValue(), f3(), v4.GetValue()), v5.GetValue(), v6.GetValue());
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			const f1 = p._GetNode(1).GetBoundMethod();
+			const v2 = p._GetNode(2).GetVar();
+			const f3 = p._GetNode(3).GetBoundMethod();
+			const v4 = p._GetNode(4).GetVar();
+			const f5 = p._GetNode(5).GetBoundMethod();
+			const v6 = p._GetNode(6).GetVar();
+			return () => f0(f1(v2.GetValue()), f3(v4.GetValue()), f5(v6.GetValue()));
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			const v1 = p._GetNode(1).GetVar();
+			const v2 = p._GetNode(2).GetVar();
+			const f3 = p._GetNode(3).GetBoundMethod();
+			const v4 = p._GetNode(4).GetVar();
+			const v5 = p._GetNode(5).GetVar();
+			const v6 = p._GetNode(6).GetVar();
+			const v7 = p._GetNode(7).GetVar();
+			return () => f0(v1.GetValue(), v2.GetValue(), f3(v4.GetValue(), v5.GetValue(), v6.GetValue()), v7.GetValue());
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			const f1 = p._GetNode(1).GetBoundMethod();
+			const v2 = p._GetNode(2).GetVar();
+			const v3 = p._GetNode(3).GetVar();
+			const f4 = p._GetNode(4).GetBoundMethod();
+			const v5 = p._GetNode(5).GetVar();
+			const v6 = p._GetNode(6).GetVar();
+			const v7 = p._GetNode(7).GetVar();
+			return () => f0(f1(v2.GetValue(), (v3.GetValue() - f4()), v5.GetValue()), v6.GetValue(), v7.GetValue());
+		},
+		() => 0.25,
 		() => "ToggleButton",
-		() => "",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const n1 = p._GetNode(1);
@@ -3806,10 +3929,6 @@ self.C3_ExpressionFuncs = [
 		p => {
 			const n0 = p._GetNode(0);
 			return () => n0.ExpInstVar();
-		},
-		p => {
-			const v0 = p._GetNode(0).GetVar();
-			return () => v0.GetValue();
 		},
 		p => {
 			const n0 = p._GetNode(0);
