@@ -1,0 +1,4 @@
+Looking = didn't find a target so walk forward still looking
+Moving = Found a target, walking until I get close enough
+Attacking = Close enough to prefered target
+Default or None = Don't have a target, am not walking
